@@ -1,0 +1,14 @@
+{
+  "name": "creating-react-app",
+  "version": "1.0.0",
+  "description": "this is creating react app from scratch",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Sanjit Gawade",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

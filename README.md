@@ -1,2 +1,3 @@
 # namaste-react
- react
+
+## Chapter 1 - Inception
