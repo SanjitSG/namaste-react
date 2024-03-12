@@ -9,6 +9,7 @@ Read More about [Emmet](https://docs.emmet.io/).
 
 ## Q2: Difference between a `Library` and a `Framework`?
 **A:** Both libraries and framework are *reusable* code written by someone.
+
 **Libraries**
 
  - Provides specific functionality. ( e.g. Image carousel )
@@ -55,7 +56,9 @@ The `crossorigin` attribute is a way for you to specify to the browser how it sh
 ### Q5: Whats is difference between React and ReactDOM?
 
 **A:** `React` and `ReactDOM` are two separate packages in React ecosystem.
+
 **React:** React is a JavaScript library for ***building user interfaces***. It provides a declarative and component-based approach to building UIs, allowing developers to create reusable UI components and manage the state of those components efficiently.
+
 **ReactDom:** ReactDOM is a package that provides [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction#what_is_the_dom)-specific methods for working with React. It's responsible for ***rendering*** React components to the DOM (Document Object Model) and for managing updates to those components. ReactDOM is used in web applications to take React components and render them into the browser's DOM, allowing users to interact with the UI.
 
 ### Q6: What is difference between `react.development.js` and `react.production.js` files via CDN?
