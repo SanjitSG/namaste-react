@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const heading = React.createElement(
   "h1",
   {
@@ -8,7 +11,7 @@ const heading = React.createElement(
       fontSize: "40px",
     },
   },
-  "Heading 1!"
+  "Heading 1 from parcel!"
 );
 
 const heading2 = React.createElement(
