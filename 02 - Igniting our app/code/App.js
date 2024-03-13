@@ -11,7 +11,7 @@ const heading = React.createElement(
       fontSize: "40px",
     },
   },
-  "Heading 1 from parcel!"
+  "Heading 1 from parcel!!"
 );
 
 const heading2 = React.createElement(
