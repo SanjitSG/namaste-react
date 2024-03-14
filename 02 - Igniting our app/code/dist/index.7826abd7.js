@@ -2963,7 +2963,7 @@ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
         color: "red",
         fontSize: "40px"
     }
-}, "Heading 1 from parcel!");
+}, "Heading 1 from parcel!!");
 const heading2 = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
     id: "title 2",
     className: "heading",
