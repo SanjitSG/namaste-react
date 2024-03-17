@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 // react element written using jsx expression
-const title = (
+const Title = (
   <h1 id="title" key="1">
     Heading
   </h1>
@@ -11,12 +11,12 @@ const title = (
 //component written using JSX
 const TitleOne = () => (
   <div>
-    {title}
+    {Title}
     <h1>i'm Title Rendered as JSX component.</h1>
   </div>
 );
 
-console.log(title);
+console.log(Title);
 console.log(TitleOne);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
