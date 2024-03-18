@@ -100,30 +100,57 @@ import ReactDOM from "react-dom/client";
 // Q: `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
 
 // 1. {TitleComponent} - react Element or a variable
-const TitleElement = <h1>TitleElement</h1>; //This is a react Element created using jsx syntax. it returns an object
+// const TitleElement = <h1>TitleElement</h1>; //This is a react Element created using jsx syntax. it returns an object
 
 // 2 {<TitleComponent/>}
-const TitleComponent = () => (
-  <div>
-    <h1>This is functional component `TitleComponent`</h1>
-  </div>
-);
+// const TitleComponent = () => (
+//   <div>
+//     <h1>This is functional component `TitleComponent`</h1>
+//   </div>
+// );
+
+// const Header = () => (
+//   <div className="Title">
+//     <h1 style={{ color: "red" }} key="h1">
+//       {TitleElement}
+//       <hr />
+//     </h1>
+//     <h2 style={{ color: "green" }} key="h2">
+//       <TitleComponent />
+//       <hr />
+//     </h2>
+//     <h3 style={{ color: "blue" }} key="h3">
+//       <p>* PlaceHolder for future child elements</p>
+//       <TitleComponent></TitleComponent>
+//     </h3>
+//   </div>
+// );
+/* ---------------------------------------------- */
+
+/*
+Q: Create a Header Component from scratch using Functional Component with JSX
+- Add a Logo on Left
+- Add a search bar in middle
+- Add User icon on right
+- Add CSS to make it look nice
+*/
 
 const Header = () => (
-  <div className="Title">
-    <h1 style={{ color: "red" }} key="h1">
-      {TitleElement}
-      <hr />
-    </h1>
-    <h2 style={{ color: "green" }} key="h2">
-      <TitleComponent />
-      <hr />
-    </h2>
-    <h3 style={{ color: "blue" }} key="h3">
-      <p>* PlaceHolder for future child elements</p>
-      <TitleComponent></TitleComponent>
-    </h3>
-  </div>
+  <nav class="nav">
+    <div id="logo" class="logo" key="logo">
+      <span style={{ fontSize: "40px" }}>
+        <i class="fa-brands fa-react fa-spin"></i>
+      </span>
+    </div>
+    <div id="search" key="searchBar">
+      <input type="text" class="input" placeholder="Search" />
+    </div>
+    <div id="user" key="userIcon">
+      <button style={{ fontSize: "40px" }}>
+        <i class="fa-regular fa-user"></i>
+      </button>
+    </div>
+  </nav>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

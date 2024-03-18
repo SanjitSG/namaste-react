@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav {
+  background-color: aqua;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav #logo {
+  margin-left: 30px;
+  color: blue;
+}
+
+.nav input {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 400px;
+}
+
+input:focus {
+  border: 3px solid rgb(10, 162, 223);
+}
+
+button {
+  background: none;
+  border: none;
+  color: rgb(18, 24, 29);
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.1);
+  transition: transform linear 0.2s;
+}
