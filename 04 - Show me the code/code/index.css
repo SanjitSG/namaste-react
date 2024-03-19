@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav */
+.nav {
+  margin: 15px;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.nav > img {
+  padding: 5px;
+  margin-left: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.nav > ul {
+  margin-right: 30px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav > ul > li {
+  padding: 0 8px;
+}
+
+/* restaurant card */
