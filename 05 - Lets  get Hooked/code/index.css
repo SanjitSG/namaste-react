@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* nav */
+.nav {
+  margin: 15px;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  position: sticky;
+  top: 0;
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+
+.nav > img {
+  padding: 5px;
+  margin-left: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.nav > ul {
+  margin-right: 30px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav > ul > li {
+  padding: 0 8px;
+}
+
+/* restaurant card */
+
+.restaurant {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: rgb(245, 245, 245);
+  width: 250px;
+  /* height: 375px; */
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  /* box shadow */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+/* .img{
+  
+} */
+.card > img {
+  padding-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.description {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.description > h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.description > p {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
