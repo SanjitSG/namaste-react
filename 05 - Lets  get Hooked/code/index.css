@@ -99,3 +99,30 @@ body {
   cursor: pointer;
   border: 1px solid black;
 }
+
+#search-input {
+  margin-left: 50px;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid salmon;
+}
+
+.search-btn {
+  padding: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+  transition: transform ease 0.1s;
+}
+.filter-btn {
+  margin: 10px 10px 10px 50px;
+  cursor: pointer;
+  padding: 10px;
+  /* border: none; */
+}
