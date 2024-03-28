@@ -20,10 +20,9 @@ const Body = () => {
     );
   };
 
-  if (restaurantListData.length === 0) {
-    return <Shimmer />;
-  }
-  return (
+  return restaurantListData.length === 0 ? (
+    <Shimmer />
+  ) : (
     <>
       <div className="filter">
         <button
