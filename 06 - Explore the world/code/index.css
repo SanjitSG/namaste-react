@@ -146,6 +146,18 @@ body {
 }
 
 .login-btn {
+  width: 60px;
   padding: 0 8px;
   cursor: pointer;
+}
+
+#search-btn {
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+.search-box {
+  margin: 10px 10px 10px 50px;
+  padding: 10px;
+  border: none;
 }

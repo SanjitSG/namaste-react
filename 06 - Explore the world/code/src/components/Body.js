@@ -4,8 +4,9 @@ import { SWIGGY_API } from "../utils/constant";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
+  console.log("body");
   const [restaurantListData, setRestaurantListData] = useState([]);
-
+  const [searchTxt, setSearchTxt] = useState("");
   useEffect(() => {
     fetchData();
   }, []);
@@ -25,6 +26,27 @@ const Body = () => {
   ) : (
     <>
       <div className="filter">
+        <input
+          type="text"
+          name="search-box"
+          className="search-box"
+          value={searchTxt}
+          onChange={(e) => {
+            setSearchTxt(e.target.value);
+          }}
+        />
+        <button
+          id="search-btn"
+          onClick={() => {
+            const filteredSearch = restaurantListData.filter((res) => {
+              return res.info.name.includes(searchTxt);
+            });
+
+            setRestaurantListData(filteredSearch);
+          }}
+        >
+          Search
+        </button>
         <button
           className="filter-btn"
           onClick={() => {
