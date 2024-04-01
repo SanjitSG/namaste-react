@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { LOGO_URL } from "../utils/constant";
 const Logo = () => (
   <img
@@ -10,9 +10,6 @@ const Logo = () => (
 // header component
 const Header = () => {
   const [loginBtn, setLoginBtn] = useState("Login");
-  useEffect(() => {
-    console.log(" Header useEffect");
-  }, [loginBtn]);
   return (
     <div className="nav">
       <Logo />

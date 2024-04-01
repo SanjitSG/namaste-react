@@ -1,6 +1,6 @@
 import { IMG_URL } from "../utils/constant";
 
-const RestaurantCard = ({ name, cloudinaryImageId, cuisines, avgRating, sla }) => {
+const RestaurantCard = ({ name, cloudinaryImageId, cuisines, avgRating }) => {
   return (
     <div className="card">
       <img
@@ -9,9 +9,8 @@ const RestaurantCard = ({ name, cloudinaryImageId, cuisines, avgRating, sla }) =
       />
       <div className="description">
         <h2>{name}</h2>
-        <p>{cuisines.join(", ")}</p>
+        <p>{cuisines.join(" ")}</p>
         <p>{avgRating} stars</p>
-        <p>{sla.slaString}</p>
       </div>
     </div>
   );

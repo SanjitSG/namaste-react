@@ -4,14 +4,12 @@ import { SWIGGY_API } from "../utils/constant";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-  console.log("body rendered");
-
+  console.log("body");
   const [restaurantListData, setRestaurantListData] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchTxt, setSearchTxt] = useState("");
 
   useEffect(() => {
-    console.log("useEffect called");
     fetchData();
   }, []);
 
@@ -20,6 +18,7 @@ const Body = () => {
 
     const json = await data.json();
 
+    console.log(json);
     setRestaurantListData(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
