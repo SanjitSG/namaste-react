@@ -7,12 +7,13 @@ const Logo = () => (
   ></img>
 );
 
-// header component
 const Header = () => {
   const [loginBtn, setLoginBtn] = useState("Login");
+
   useEffect(() => {
     console.log(" Header useEffect");
   }, [loginBtn]);
+
   return (
     <div className="nav">
       <Logo />
