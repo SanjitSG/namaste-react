@@ -8,7 +8,7 @@ import Food from "./components/Food";
 import Cart from "./components/Cart";
 import Support from "./components/Support";
 
-import { Outlet, createBrowserRouter, R, RouterProvider } from "react-router-dom";
+import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
 
 const AppLayout = () => (
@@ -41,7 +41,7 @@ const appRouter = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "/restaurant/:resId",
+        path: "/restaurants/:resId",
         element: <RestaurantMenu />,
       },
     ],
