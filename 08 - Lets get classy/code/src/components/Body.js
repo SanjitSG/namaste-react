@@ -4,7 +4,6 @@ import { SWIGGY_API } from "../utils/constant";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-  console.log("body");
   const [restaurantListData, setRestaurantListData] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchTxt, setSearchTxt] = useState("");
@@ -64,7 +63,6 @@ const Body = () => {
       </div>
       <div className="restaurant">
         {filteredRestaurant.map((restaurant) => {
-          console.log(restaurant);
           return (
             <RestaurantCard
               {...restaurant.info}
