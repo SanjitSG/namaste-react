@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import User from "./User";
 import UserClass from "./UserClass";
 
@@ -6,24 +6,20 @@ class Support extends React.Component {
   constructor(props) {
     super(props);
 
-    console.log("Parent Constructor");
+    // console.log("Parent Constructor");
   }
 
   componentDidMount() {
-    console.log("Parent Component Did Mount");
+    // console.log("Parent Component Did Mount");
   }
   render() {
-    console.log("Parent render");
+    // console.log("Parent render");
     return (
       <div>
         <h1>Support Component</h1>
         <UserClass
-          name={"First Class Component"}
+          name={"First child"}
           location={"Goa"}
-        />
-        <UserClass
-          name={"Second Class Component"}
-          location={"BLR"}
         />
       </div>
     );
