@@ -17,10 +17,7 @@ class Support extends React.Component {
     return (
       <div>
         <h1>Support Component</h1>
-        <UserClass
-          name={"First child"}
-          location={"Goa"}
-        />
+        <UserClass user={"sanjitSG"} />
       </div>
     );
   }

@@ -5,33 +5,47 @@ class UserClass extends React.Component {
     super(props);
 
     this.state = {
-      count: 0,
-      count2: 1,
+      userInfo: {
+        name: "Dummy Name",
+        location: "US",
+        avatar_url: "",
+      },
     };
-    console.log(this.props.name + " Constructor");
+    console.log(this.props.user + " Constructor is called");
   }
 
-  componentDidMount() {
-    this.timer = setInterval(() => {
-      console.log("hello dev");
-    }, 1000);
-    console.log(this.props.name + " componentDidMount");
+  async componentDidMount() {
+    console.log(this.props.user + " ComponentDidMount is called");
+
+    const data = await fetch("https://api.github.com/users/sanjitSG");
+    const json = await data.json();
+
+    console.log(json);
+    this.setState({
+      userInfo: json,
+    });
   }
+
   componentDidUpdate() {
-    console.log(this.props.name + " Component Did update");
+    console.log(this.state.userInfo.name + " Component Did update");
   }
+
   componentWillUnmount() {
-    clearInterval(this.timer);
-    console.log(this.props.name + " Component will mount");
+    console.log(this.props.user + " Component will unmount");
   }
   render() {
-    console.log(this.props.name + " Render");
-    const { name, location } = this.props;
+    const { name, location, avatar_url } = this.state.userInfo;
+    console.log(this.state.userInfo.name + " render is called");
+
     return (
       <div className="user-card">
         <h3>Name: {name}</h3>
         <h4>Location: {location}</h4>
         <h4>Social: @SanjitGoa</h4>
+        <img
+          src={avatar_url}
+          alt={name}
+        />
       </div>
     );
   }
