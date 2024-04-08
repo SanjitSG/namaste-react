@@ -10,34 +10,24 @@ class UserClass extends React.Component {
         location: "US",
         avatar_url: "",
       },
-      count: 0,
     };
-    console.log(this.props.user + " Constructor is called");
   }
 
   async componentDidMount() {
-    console.log(this.props.user + " ComponentDidMount is called");
-
-    const data = await fetch("https://api.github.com/users/sanjitSG");
-    const json = await data.json();
-
-    this.setState({
-      userInfo: json,
-    });
+    // console.log(this.props.user + " ComponentDidMount is called");
+    // const data = await fetch("https://api.github.com/users/sanjitSG");
+    // const json = await data.json();
+    // this.setState({
+    //   userInfo: json,
+    // });
   }
 
-  componentDidUpdate() {
-    console.log(this.state.userInfo.name + " Component Did update");
-  }
+  componentDidUpdate() {}
 
-  componentWillUnmount() {
-    console.log(this.props.user + " Component will unmount");
-  }
+  componentWillUnmount() {}
 
   render() {
     const { name, location, avatar_url } = this.state.userInfo;
-    console.log(this.state.userInfo.name + " render is called");
-    const { count } = this.state;
     return (
       <div className="user-card">
         <button
