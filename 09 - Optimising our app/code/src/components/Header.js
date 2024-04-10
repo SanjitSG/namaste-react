@@ -13,7 +13,7 @@ const Logo = () => (
 const Header = () => {
   const [loginBtn, setLoginBtn] = useState("Login");
   const onlineStatue = useOnlineStatus();
-  console.log("header Loaded");
+
   return (
     <div className="nav">
       <Logo />

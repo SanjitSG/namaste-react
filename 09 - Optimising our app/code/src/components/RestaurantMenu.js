@@ -1,6 +1,6 @@
 import { IMG_URL } from "../utils/constant";
-import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
+import Shimmer from "./Shimmer";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 const RestaurantMenu = () => {
