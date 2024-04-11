@@ -28,29 +28,30 @@ const Body = () => {
       ) : error ? (
         <div>Error fetching data: {error.message}</div>
       ) : (
-        <>
-          <div className="filter">
+        <div>
+          <div className="m-4">
             <input
               type="text"
               name="search-box"
-              className="search-box"
+              className="shadow-lg border"
               value={searchTxt}
               onChange={(e) => setSearchTxt(e.target.value)}
             />
             <button
+              className="m-2 px-2 py-1 bg-blue-200 rounded-md"
               id="search-btn"
               onClick={handleSearch}
             >
               Search
             </button>
             <button
-              className="filter-btn"
+              className="m-2 px-2 py-1 bg-green-200 rounded-md"
               onClick={handleTopRated}
             >
               Top Rated Restaurant
             </button>
           </div>
-          <div className="restaurant">
+          <div className="flex m-4 p-4 flex-wrap justify-evenly bg-orange-100 shadow-sm rounded-lg">
             {searchTxt.length > 0 && filteredData.length > 0 ? (
               filteredData.map((restaurant) => (
                 <RestaurantCard
@@ -69,7 +70,7 @@ const Body = () => {
               ))
             )}
           </div>
-        </>
+        </div>
       )}
     </>
   );

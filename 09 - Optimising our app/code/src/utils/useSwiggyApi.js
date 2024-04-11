@@ -15,7 +15,7 @@ const useSwiggyApi = () => {
         const data = await fetch(SWIGGY_API);
         const json = await data.json();
         setRestaurantListData(
-          json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+          json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
         );
       } catch (error) {
         setError(error); // Set error state if fetching fails
@@ -26,7 +26,7 @@ const useSwiggyApi = () => {
 
     fetchData();
   }, []);
-
+  console.log(restaurantListData);
   return { restaurantListData, isLoading, error };
 };
 
