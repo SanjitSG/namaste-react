@@ -2,6 +2,7 @@ import { IMG_URL } from "../utils/constant";
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
+import RestaurantCategories from "./RestaurantCategories";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -14,7 +15,11 @@ const RestaurantMenu = () => {
     resData?.cards[2]?.card?.card?.info;
 
   const { itemCards } = resData?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
-  console.log(itemCards);
+  const categories = resData?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    (c) =>
+      c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+  );
+
   return (
     <div className="m-40">
       <div className="flex m-4 p-4 bg-orange-200 shadow-lg">
@@ -33,30 +38,9 @@ const RestaurantMenu = () => {
           <p>{avgRatingString}</p>
         </div>
       </div>
-
-      <div className="m-4 p-8 border flex flex-col items-center rounded-md">
-        {itemCards.map((item, index) => (
-          <li
-            className="flex justify-between m-4 p-4 border shadow-md bg-orange-100 min-w-full max-h-60 overflow-hidden rounded-md"
-            key={index}
-          >
-            <div className="p-4">
-              <h3 className="text-lg font-medium">{item.card.info.name}</h3>
-              <p className="item-header item-rating">
-                {item.card.info.ratings.aggregatedRating.rating}
-              </p>
-              <p className="max-w-lg">{item.card.info.description}</p>
-            </div>
-            <div>
-              <img
-                className="w-48 h-48 object-cover"
-                src={IMG_URL + item.card.info.imageId}
-                alt={item.card.info.name}
-              />
-            </div>
-          </li>
-        ))}
-      </div>
+      {categories.map((category) => {
+        <RestaurantCategories data={category} />;
+      })}
     </div>
   );
 };
