@@ -20,6 +20,7 @@ const RestaurantMenu = () => {
       c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
   );
 
+  console.log(categories);
   return (
     <div className="m-40">
       <div className="flex m-4 p-4 bg-orange-200 shadow-lg">
@@ -39,7 +40,7 @@ const RestaurantMenu = () => {
         </div>
       </div>
       {categories.map((category) => {
-        <RestaurantCategories data={category} />;
+        return <RestaurantCategories data={category} />;
       })}
     </div>
   );
