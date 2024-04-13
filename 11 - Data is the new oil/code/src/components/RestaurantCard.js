@@ -23,4 +23,14 @@ const RestaurantCard = ({ name, cloudinaryImageId, cuisines, avgRating, id }) =>
   );
 };
 
+export const withPromotedLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div>
+        <label className="absolute m-2 p-2">🟢</label>
+        <RestaurantCard {...props} />
+      </div>
+    );
+  };
+};
 export default RestaurantCard;

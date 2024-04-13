@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import { useState } from "react";
 import Shimmer from "./Shimmer";
 import useSwiggyApi from "../utils/useSwiggyApi";
@@ -7,6 +7,8 @@ const Body = () => {
   const { restaurantListData, isLoading, error } = useSwiggyApi();
   const [searchTxt, setSearchTxt] = useState("");
   const [filteredData, setFilteredData] = useState([]); // Define state for filtered data
+
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
   const handleSearch = () => {
     const filteredResults = restaurantListData.filter((res) => {
@@ -60,12 +62,19 @@ const Body = () => {
                 />
               ))
             ) : searchTxt.length == 0 ? (
-              restaurantListData.map((restaurant) => (
-                <RestaurantCard
-                  {...restaurant.info}
-                  key={restaurant.info.id}
-                />
-              ))
+              restaurantListData.map((restaurant) =>
+                restaurant.info.isOpen ? (
+                  <RestaurantCardPromoted
+                    {...restaurant.info}
+                    key={restaurant.info.id}
+                  />
+                ) : (
+                  <RestaurantCard
+                    {...restaurant.info}
+                    key={restaurant.info.id}
+                  />
+                )
+              )
             ) : (
               <p>No res found</p>
             )}
