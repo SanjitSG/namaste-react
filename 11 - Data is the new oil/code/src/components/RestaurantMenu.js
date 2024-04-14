@@ -14,16 +14,14 @@ const RestaurantMenu = () => {
   const { name, costForTwoMessage, avgRatingString, cuisines, id, cloudinaryImageId } =
     resData?.cards[2]?.card?.card?.info;
 
-  const { itemCards } = resData?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
   const categories = resData?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
     (c) =>
       c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
   );
 
-  console.log(categories);
   return (
-    <div className="m-40">
-      <div className="flex m-4 p-4 bg-orange-200 shadow-lg">
+    <div className="mx-auto">
+      <div className="flex w-8/12 mx-auto p-4 bg-orange-200 shadow-lg">
         <div>
           <img
             className="w-48 h-48"
@@ -40,7 +38,12 @@ const RestaurantMenu = () => {
         </div>
       </div>
       {categories.map((category) => {
-        return <RestaurantCategories data={category} />;
+        return (
+          <RestaurantCategories
+            data={category?.card?.card}
+            key={category?.card?.card?.title}
+          />
+        );
       })}
     </div>
   );
