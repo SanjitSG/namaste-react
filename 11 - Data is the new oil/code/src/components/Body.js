@@ -1,14 +1,17 @@
 import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Shimmer from "./Shimmer";
 import useSwiggyApi from "../utils/useSwiggyApi";
-
+import UserContext from "../utils/UserContext";
 const Body = () => {
   const { restaurantListData, isLoading, error } = useSwiggyApi();
+
   const [searchTxt, setSearchTxt] = useState("");
   const [filteredData, setFilteredData] = useState([]); // Define state for filtered data
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+
+  const { loggedInUser, setUserInfo } = useContext(UserContext);
 
   const handleSearch = () => {
     const filteredResults = restaurantListData.filter((res) => {
@@ -52,6 +55,15 @@ const Body = () => {
             >
               Top Rated Restaurant
             </button>
+            <label htmlFor="username input">Username: </label>
+            {/* <input
+              type="text"
+              className="border px-2"
+              value={loggedInUser === null ? "" : loggedInUser}
+              onChange={(e) => {
+                setUserInfo(e.target.value);
+              }}
+            /> */}
           </div>
           <div className="flex m-4 p-4 flex-wrap justify-evenly bg-orange-100 shadow-sm rounded-lg">
             {filteredData.length > 0 ? (

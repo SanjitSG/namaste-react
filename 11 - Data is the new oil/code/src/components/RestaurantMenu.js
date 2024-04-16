@@ -1,3 +1,5 @@
+// Restaurant Menu - > Name | Categories
+
 import { IMG_URL } from "../utils/constant";
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
@@ -8,9 +10,9 @@ import { useState } from "react";
 const RestaurantMenu = () => {
   const { resId } = useParams();
 
-  const resData = useRestaurantMenu(resId);
+  const resData = useRestaurantMenu(resId); // custom Hook
 
-  const [showIndex, setShowIndex] = useState(null);
+  const [showIndex, setShowIndex] = useState(null); // expand panel state variable
 
   if (resData === null) return <Shimmer />;
 
@@ -21,6 +23,15 @@ const RestaurantMenu = () => {
     (c) =>
       c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
   );
+
+  const updateActiveIndex = (newIndex) => {
+    // updated - opening and closing same accordion functionality.
+    if (newIndex === showIndex) {
+      setShowIndex(null);
+    } else {
+      setShowIndex(newIndex);
+    }
+  };
 
   return (
     <div className="mx-auto">
@@ -45,8 +56,8 @@ const RestaurantMenu = () => {
           <RestaurantCategories
             data={category?.card?.card}
             key={category?.card?.card?.title}
-            showItem={index === showIndex ? true : false}
-            setShowIndex={() => setShowIndex(index)}
+            showItem={index === showIndex}
+            updateIndex={() => updateActiveIndex(index)}
           />
         );
       })}

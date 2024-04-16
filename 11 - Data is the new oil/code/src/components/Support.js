@@ -15,7 +15,8 @@ class Support extends React.Component {
     // console.log("Parent render");
     return (
       <div>
-        <h1>Support Component</h1>
+        <h1 className="text-center font-bold">Support Component</h1>
+        <hr />
         <UserClass user={"sanjitSG"} />
       </div>
     );
