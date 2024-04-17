@@ -12,7 +12,7 @@ const cartSlice = createSlice({
     removeItem: (store) => {
       store.items.pop();
     },
-    clearCart: () => {
+    clearCart: (store) => {
       store.items.length = 0;
     },
   },
