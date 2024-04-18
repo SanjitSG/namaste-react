@@ -1,10 +1,9 @@
 import { useContext, useState } from "react";
 import logo from "../utils/logo.png";
 import { Link } from "react-router-dom";
-import useOnlineStatus from "../utils/useOnlineStatus";
+import useOnlineStatus from "../utils/Hooks/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
-import appStore from "../utils/appStore";
 
 const Header = () => {
   const [loginBtn, setLoginBtn] = useState("Login");
@@ -32,12 +31,6 @@ const Header = () => {
           className="link"
         >
           <li className="px-2">Home</li>
-        </Link>
-        <Link
-          to="/food"
-          className="link"
-        >
-          <li className="px-2">Food</li>
         </Link>
         <Link
           to="/support"
