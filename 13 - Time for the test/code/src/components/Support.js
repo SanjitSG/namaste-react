@@ -14,10 +14,12 @@ class Support extends React.Component {
   render() {
     // console.log("Parent render");
     return (
-      <div>
+      <div className="w-full flex text-center">
         <h1 className="text-center font-bold">Support Component</h1>
         <hr />
-        <UserClass user={"sanjitSG"} />
+        <div className="max-w-48 bg-lime-950 rounded-lg inline-block m-24 p-4">
+          <UserClass user={"sanjitSG"} />
+        </div>
       </div>
     );
   }
