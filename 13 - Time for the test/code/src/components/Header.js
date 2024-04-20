@@ -15,14 +15,16 @@ const Header = () => {
   return (
     <div className=" m-1 flex justify-between items-center bg-orange-100 mb-2 shadow-lg max-h-16">
       <div className="logo-container">
-        {process.env.NODE_EVN === "test" ||
-          (typeof src === "string" && (
-            <img
-              className="w-14 m-2"
-              src={logo}
-              alt="logo"
-            ></img>
-          ))}
+        {typeof logo === "string" && ( // Check if logo is a string before rendering
+          <img
+            className="w-14 m-2"
+            src={logo}
+            alt="logo"
+          />
+        )}
+        {typeof logo !== "string" && ( // Display placeholder if not a string
+          <div>Image not available (testing mode)</div>
+        )}
       </div>
 
       <h2 className="text-5xl font-bold">Goa Dines</h2>
