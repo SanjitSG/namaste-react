@@ -1,0 +1,671 @@
+[
+  {
+    "info": {
+      "id": "78169",
+      "name": "Pizza Hut",
+      "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
+      "locality": "Calangute",
+      "areaName": "Calangute",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["Pizzas", "American"],
+      "avgRating": 4.2,
+      "parentId": "721",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 34,
+        "lastMileTravel": 2.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "2.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-22 01:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "50% OFF",
+        "subHeader": "UPTO ₹100"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/pizza-hut-calangute-central-goa-78169",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "105770",
+      "name": "UBQ by Barbeque Nation",
+      "cloudinaryImageId": "pghi59shrivhp8wjz3wl",
+      "locality": "Caculo mall",
+      "areaName": "Santa Inez",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["North Indian", "Barbecue", "Biryani", "Kebabs", "Mughlai", "Desserts"],
+      "avgRating": 4,
+      "parentId": "10804",
+      "avgRatingString": "4.0",
+      "totalRatingsString": "5K+",
+      "sla": {
+        "deliveryTime": 61,
+        "lastMileTravel": 14.6,
+        "serviceability": "SERVICEABLE",
+        "slaString": "60-65 mins",
+        "lastMileTravelString": "14.6 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-21 23:30:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "50% OFF",
+        "subHeader": "UPTO ₹100"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/ubq-by-barbeque-nation-caculo-mall-santa-inez-central-goa-105770",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "305790",
+      "name": "Barbeque Nation",
+      "cloudinaryImageId": "aifq7b9rjifqs0i6moko",
+      "locality": "Panjim",
+      "areaName": "Panjim",
+      "costForTwo": "₹600 for two",
+      "cuisines": ["North Indian", "Barbecue", "Biryani", "Kebabs", "Mughlai", "Desserts"],
+      "avgRating": 3.9,
+      "parentId": "2438",
+      "avgRatingString": "3.9",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 66,
+        "lastMileTravel": 14.6,
+        "serviceability": "SERVICEABLE",
+        "slaString": "65-70 mins",
+        "lastMileTravelString": "14.6 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-21 23:30:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "50% OFF",
+        "subHeader": "UPTO ₹100"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/barbeque-nation-panjim-central-goa-305790",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "773615",
+      "name": "Mallu Republic",
+      "cloudinaryImageId": "5ac7096a598cb60c61a84c6e9b284822",
+      "locality": "Arpora",
+      "areaName": "Arpora",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["South Indian", "Kerala", "Seafood", "Biryani", "Snacks"],
+      "avgRating": 4.3,
+      "parentId": "262720",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "100+",
+      "sla": {
+        "deliveryTime": 32,
+        "lastMileTravel": 4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "4.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-21 22:30:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-South%20Indian.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-South%20Indian.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "15% OFF",
+        "subHeader": "UPTO ₹45"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/mallu-republic-arpora-central-goa-773615",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "702012",
+      "name": "Bawarchi Hyderabadi Dum Biryani",
+      "cloudinaryImageId": "ece5e40637bf1f1ef1868484db7a5775",
+      "locality": "Naika Waddo",
+      "areaName": "Baga Calangute",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["Biryani", "Beverages"],
+      "avgRating": 4.3,
+      "parentId": "419181",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "100+",
+      "sla": {
+        "deliveryTime": 19,
+        "lastMileTravel": 1.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "15-20 mins",
+        "lastMileTravelString": "1.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-21 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "40% OFF",
+        "subHeader": "UPTO ₹80",
+        "discountCalloutInfo": {
+          "message": "Free Delivery",
+          "logoCtx": {
+            "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+          }
+        }
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/bawarchi-hyderabadi-dum-biryani-naika-waddo-baga-calangute-central-goa-702012",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "273553",
+      "name": "Udipi Cafe",
+      "cloudinaryImageId": "lxdu8n98isfbjaclhfnr",
+      "locality": "Baga-Calangute",
+      "areaName": "Calangute",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["South Indian", "Indian", "Chinese", "Tandoor"],
+      "avgRating": 4.2,
+      "veg": true,
+      "parentId": "218938",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 29,
+        "lastMileTravel": 1.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "1.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-21 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        "textExtendedBadges": [
+          {
+            "iconId": "guiltfree/GF_Logo_android_3x",
+            "shortDescription": "options available",
+            "fontColor": "#7E808C"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "",
+                  "fontColor": "#7E808C",
+                  "iconId": "guiltfree/GF_Logo_android_3x",
+                  "shortDescription": "options available"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "40% OFF",
+        "subHeader": "UPTO ₹75",
+        "discountTag": "POCKET HERO",
+        "discountCalloutInfo": {
+          "message": "Free Delivery",
+          "logoCtx": {
+            "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+          }
+        }
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/udipi-cafe-baga-calangute-central-goa-273553",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "290903",
+      "name": "Anand Sea Food Restaurant",
+      "cloudinaryImageId": "xgfvyh5pt4ra9rdylzw9",
+      "locality": "Anjuna",
+      "areaName": "Nor_Baga Calangute",
+      "costForTwo": "₹500 for two",
+      "cuisines": ["Chinese", "Goan", "Indian", "Seafood"],
+      "avgRating": 4.3,
+      "parentId": "32820",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 31,
+        "lastMileTravel": 6.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "6.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-21 16:30:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹100 OFF",
+        "subHeader": "ABOVE ₹349",
+        "discountTag": "FLAT DEAL"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/anand-sea-food-restaurant-anjuna-nor-baga-calangute-central-goa-290903",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "343741",
+      "name": "Tandoor Express",
+      "cloudinaryImageId": "u3plzhthzqsxub10iswk",
+      "locality": "Baga-Calangute",
+      "areaName": "Baga  Calangute",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Tandoor", "Biryani", "Seafood", "Indian"],
+      "avgRating": 3.9,
+      "parentId": "15832",
+      "avgRatingString": "3.9",
+      "totalRatingsString": "100+",
+      "sla": {
+        "deliveryTime": 31,
+        "lastMileTravel": 1.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "1.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-21 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "20% OFF",
+        "subHeader": "UPTO ₹50"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/tandoor-express-baga-calangute-central-goa-343741",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "87997",
+      "name": "The Fisherman's Wharf",
+      "cloudinaryImageId": "gsysivg2n7bs6xw5sag2",
+      "locality": "Calangute",
+      "areaName": "Calangute",
+      "costForTwo": "₹600 for two",
+      "cuisines": ["Indian", "Chinese"],
+      "avgRating": 4.4,
+      "parentId": "20134",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "500+",
+      "sla": {
+        "deliveryTime": 36,
+        "lastMileTravel": 2.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "2.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-04-21 23:45:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "30% OFF",
+        "subHeader": "UPTO ₹75"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+      "context": "seo-data-3087ce78-aedf-426a-a0ea-15f88278e906"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/the-fishermans-wharf-calangute-central-goa-87997",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  }
+]

@@ -1,4 +1,4 @@
-import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
+import RestaurantCard, { isOnline } from "./RestaurantCard";
 import { useContext, useState } from "react";
 import Shimmer from "./Shimmer";
 import useSwiggyApi from "../utils/Hooks/useSwiggyApi";
@@ -9,7 +9,7 @@ const Body = () => {
   const [searchTxt, setSearchTxt] = useState("");
   const [filteredData, setFilteredData] = useState([]); // Define state for filtered data
 
-  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+  const RestaurantCardOnline = isOnline(RestaurantCard);
 
   const { loggedInUser, setUserInfo } = useContext(UserContext);
 
@@ -22,7 +22,7 @@ const Body = () => {
 
   const handleTopRated = () => {
     const filteredResults = restaurantListData.filter((res) => res.info.avgRating > 4);
-    console.log(filteredResults);
+
     setFilteredData(filteredResults); // Update filteredData state with top-rated restaurants
   };
 
@@ -36,6 +36,7 @@ const Body = () => {
         <div>
           <div className="m-4">
             <input
+              data-testid="search-box"
               type="text"
               name="search-box"
               className="shadow-lg border"
@@ -69,20 +70,20 @@ const Body = () => {
             {filteredData.length > 0 ? (
               filteredData.map((restaurant) => (
                 <RestaurantCard
-                  {...restaurant.info}
+                  resData={restaurant.info}
                   key={restaurant.info.id}
                 />
               ))
             ) : searchTxt.length == 0 ? (
               restaurantListData.map((restaurant) =>
                 restaurant.info.isOpen ? (
-                  <RestaurantCardPromoted
-                    {...restaurant.info}
+                  <RestaurantCardOnline
+                    resData={restaurant.info}
                     key={restaurant.info.id}
                   />
                 ) : (
                   <RestaurantCard
-                    {...restaurant.info}
+                    resData={restaurant.info}
                     key={restaurant.info.id}
                   />
                 )
