@@ -22,6 +22,7 @@ const Cart = () => {
         <h1>Cart is Empty!!</h1>
       ) : (
         <button
+          data-testid="clearBtn"
           className="m-2 p-4 text-center font-bold text-2xl bg-black text-white rounded-lg"
           onClick={handleClearCart}
         >

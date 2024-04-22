@@ -9,6 +9,7 @@ import "@testing-library/jest-dom";
 import { Provider } from "react-redux";
 import appStore from "../../utils/appStore";
 import Header from "../Header";
+import Cart from "../Cart";
 
 jest.mock("../../utils/Hooks/useRestaurantMenu", () => ({
   __esModule: true,
@@ -25,6 +26,7 @@ it("Should render Restaurant Menu with categories", async () => {
           <Header />
           <RestaurantMenu />
         </BrowserRouter>
+        <Cart />
       </Provider>
     );
   });
@@ -39,7 +41,13 @@ it("Should render Restaurant Menu with categories", async () => {
   fireEvent.click(addBtn[0]);
   fireEvent.click(addBtn[1]);
 
-  const cart = screen.getByText("Cart (2)");
-  fireEvent.click(cart);
-  expect(items.length).toBe(8);
+  expect(screen.getAllByTestId("item").length).toBe(8);
+  // const cartItems = screen.getAllByTestId("item");
+  // expect(cartItems.length).toBe(8);
+
+  // fireEvent.click(screen.getByTestId("clearBtn"));
+  // expect(cartItems.length).toBe(6);
+
+  fireEvent.click(screen.getByTestId("clearBtn"));
+  expect(screen.getAllByTestId("item").length).toBe(6);
 });
