@@ -17,74 +17,77 @@ useSwiggyApi.mockReturnValue({
   isLoading: false,
   error: null,
 });
-it("Should render body component with search button", async () => {
-  await act(async () => {
-    render(
-      <BrowserRouter>
-        <Body />
-      </BrowserRouter>
-    );
+
+describe("Body component testing", () => {
+  it("Should render body component with search button", async () => {
+    await act(async () => {
+      render(
+        <BrowserRouter>
+          <Body />
+        </BrowserRouter>
+      );
+    });
+
+    const searchBtn = screen.getByText("Search");
+    expect(searchBtn).toBeInTheDocument();
   });
 
-  const searchBtn = screen.getByText("Search");
-  expect(searchBtn).toBeInTheDocument();
-});
+  it("Should render body component and test search input", async () => {
+    await act(async () => {
+      render(
+        <BrowserRouter>
+          <Body />
+        </BrowserRouter>
+      );
+    });
 
-it("Should render body component and test search input", async () => {
-  await act(async () => {
-    render(
-      <BrowserRouter>
-        <Body />
-      </BrowserRouter>
-    );
+    const searchInput = screen.getByTestId("search-box");
+    expect(searchInput).toBeInTheDocument();
   });
 
-  const searchInput = screen.getByTestId("search-box");
-  expect(searchInput).toBeInTheDocument();
-});
+  it("Should test test the search functionality", async () => {
+    await act(async () => {
+      render(
+        <BrowserRouter>
+          <Body />
+        </BrowserRouter>
+      );
+    });
 
-it("Should test test the search functionality", async () => {
-  await act(async () => {
-    render(
-      <BrowserRouter>
-        <Body />
-      </BrowserRouter>
-    );
+    const resCardBefore = screen.getAllByTestId("resCard");
+    expect(resCardBefore.length).toBe(9);
+
+    const searchBox = screen.getByTestId("search-box");
+    expect(searchBox).toBeInTheDocument();
+
+    const searchBtn = screen.getByText("Search");
+    expect(searchBtn).toBeInTheDocument();
+
+    fireEvent.change(searchBox, { target: { value: "Cafe" } });
+    fireEvent.click(searchBtn);
+
+    const resCardAfter = screen.getAllByTestId("resCard");
+    expect(resCardAfter.length).toBe(1);
   });
 
-  const resCardBefore = screen.getAllByTestId("resCard");
-  expect(resCardBefore.length).toBe(9);
+  it("Should render body component with  top filtered cards", async () => {
+    await act(async () => {
+      render(
+        <BrowserRouter>
+          <Body />
+        </BrowserRouter>
+      );
+    });
 
-  const searchBox = screen.getByTestId("search-box");
-  expect(searchBox).toBeInTheDocument();
+    const resCardBefore = screen.getAllByTestId("resCard");
+    expect(resCardBefore.length).toBe(9);
 
-  const searchBtn = screen.getByText("Search");
-  expect(searchBtn).toBeInTheDocument();
+    const filterBtn = screen.getByText("Top Rated Restaurant");
+    expect(filterBtn).toBeInTheDocument();
 
-  fireEvent.change(searchBox, { target: { value: "Cafe" } });
-  fireEvent.click(searchBtn);
+    fireEvent.click(filterBtn);
 
-  const resCardAfter = screen.getAllByTestId("resCard");
-  expect(resCardAfter.length).toBe(1);
-});
-
-it("Should render body component with  top filtered cards", async () => {
-  await act(async () => {
-    render(
-      <BrowserRouter>
-        <Body />
-      </BrowserRouter>
-    );
+    const resCardAfter = screen.getAllByTestId("resCard");
+    expect(resCardAfter.length).toBe(6);
   });
-
-  const resCardBefore = screen.getAllByTestId("resCard");
-  expect(resCardBefore.length).toBe(9);
-
-  const filterBtn = screen.getByText("Top Rated Restaurant");
-  expect(filterBtn).toBeInTheDocument();
-
-  fireEvent.click(filterBtn);
-
-  const resCardAfter = screen.getAllByTestId("resCard");
-  expect(resCardAfter.length).toBe(6);
 });

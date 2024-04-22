@@ -2,7 +2,6 @@
 import ItemList from "./ItemList";
 
 const RestaurantCategories = ({ data, showItem, updateIndex }) => {
-  console.log(showItem);
   const handleShowItems = () => {
     updateIndex(); //setShowIndex
   };

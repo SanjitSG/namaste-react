@@ -17,7 +17,7 @@ const RestaurantMenu = () => {
   if (resData === null) return <Shimmer />;
 
   const { name, costForTwoMessage, avgRatingString, cuisines, id, cloudinaryImageId } =
-    resData?.cards[2]?.card?.card?.info;
+    resData?.cards[2]?.card?.card.info || {};
 
   const categories = resData?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
     (c) =>

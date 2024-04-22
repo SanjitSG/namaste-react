@@ -11,6 +11,7 @@ const ItemList = ({ items, isInCart, handleRemoveItems }) => {
     <div>
       {items.map((item) => (
         <div
+          data-testid="item"
           key={item.card.info.id}
           className="flex text-left p-3 my-2 rounded-lg border"
         >
