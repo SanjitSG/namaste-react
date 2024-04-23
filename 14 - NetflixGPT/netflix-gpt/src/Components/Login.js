@@ -1,8 +1,17 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Header from "./Header";
+import { checkValidData } from "../utils/validate";
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
+  const [errorMessage, setErrorMessage] = useState(null);
 
+  const email = useRef(null);
+  const password = useRef(null);
+
+  const handleButtonClick = () => {
+    const message = checkValidData(email.current.value, password.current.value);
+    setErrorMessage(message);
+  };
   const toggleSignIn = () => {
     setIsSignIn(!isSignIn);
   };
@@ -18,8 +27,8 @@ const Login = () => {
         alt="netflix-main-bg"
       />
       <form
-        action="submit"
-        className="absolute p-12 bg-black w-3/12 min-w-96 my-24 mx-auto right-0 left-0 text-white rounded-lg opacity-80"
+        onSubmit={(e) => e.preventDefault()}
+        className="absolute p-12 my-36 bg-black w-3/12 min-w-96 mx-auto right-0 left-0 text-white rounded-lg opacity-80"
       >
         <h1 className="font-bold py-3 text-3xl">{isSignIn ? "Sign In" : "Sign up"}</h1>
         {!isSignIn && (
@@ -32,20 +41,26 @@ const Login = () => {
           />
         )}
         <input
+          ref={email}
           className="px-4 py-3 my-2 rounded-lg w-full bg-black border border-gray-400"
           type="text"
           name="email"
           id="email"
-          placeholder="Email Id"
+          placeholder="Email Address"
         />
         <input
+          ref={password}
           className="px-4 py-3 my-2 rounded-lg w-full  bg-black border border-gray-400"
           type="password"
           name="password"
           id="password"
           placeholder="Password"
         />
-        <button className="bg-red-700 px-4 py-2 my-8 w-full rounded-lg">
+        <p className=" my-5 font-bold text-red-600">{errorMessage}</p>
+        <button
+          className="bg-red-700 px-4 py-2 my-8 w-full rounded-lg"
+          onClick={handleButtonClick}
+        >
           {isSignIn ? "Sign In" : "Sign up"}
         </button>
         <p
