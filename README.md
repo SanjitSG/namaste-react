@@ -1,8 +1,8 @@
-# Welcome to the Namaste React Course Repository!
+# Welcome to the Namaste React Course Repository! By [Sanjit Gawade](https://github.com/SanjitSG)
 
 Hello there! Welcome to my personal repository documenting my journey through the Namaste React course by [_Akshay Saini_](https://github.com/akshaymarch7). 🌟
 
-In this space, I'll be sharing my assignments, handwritten notes, and code snippets as I dive deeper into learning React. While the course itself is created by [_Akshay Saini & Namaste.Dev team_](https://github.com/akshaymarch7), this repository is my way of capturing and sharing my progress with the wider community.
+In this space, I'll be sharing my assignments, handwritten notes, and code snippets as I dive deeper into learning React. While the course itself is created by [_Akshay Saini & Namaste.Dev team_](https://namastedev.com/), this repository is my way of capturing and sharing my progress with the wider community.
 
 ### About My Journey
 
