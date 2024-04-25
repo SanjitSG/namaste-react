@@ -1,6 +1,7 @@
 const heading = React.createElement(
-  "h1",
+  "h1", //tagName
   {
+    //props
     id: "title",
     className: "heading",
     style: {
@@ -8,7 +9,7 @@ const heading = React.createElement(
       fontSize: "40px",
     },
   },
-  "Heading 1!"
+  "Heading 1!" //content
 );
 
 const heading2 = React.createElement(
