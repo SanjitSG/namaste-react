@@ -1,14 +1,22 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
+import { addUser } from "../utils/userSlice";
+import { useDispatch } from "react-redux";
+
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
 
+  const dispatch = useDispatch();
+
+  const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
 
@@ -22,9 +30,25 @@ const Login = () => {
     if (!isSignIn) {
       createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
         .then((userCredential) => {
-          // Signed up
           const user = userCredential.user;
-          navigate("/browse");
+          updateProfile(user, {
+            displayName: name.current.value,
+            photoURL: "https://avatars.githubusercontent.com/u/45919581?v=4",
+          })
+            .then(() => {
+              const { uid, email, displayName, photoURL } = auth.currentUser;
+              dispatch(
+                addUser({
+                  uid: uid,
+                  email: email,
+                  displayName: displayName,
+                  photoURL: photoURL,
+                })
+              );
+            })
+            .catch((error) => {
+              setErrorMessage(error.message);
+            });
           console.log(user);
         })
         .catch((error) => {
@@ -35,10 +59,7 @@ const Login = () => {
     } else {
       signInWithEmailAndPassword(auth, email.current.value, password.current.value)
         .then((userCredential) => {
-          // Signed in
           const user = userCredential.user;
-          navigate("/browse");
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -56,7 +77,7 @@ const Login = () => {
     <div>
       <Header />
       <img
-        className="absolute w-full "
+        className="absolute w-full"
         src={
           "https://assets.nflxext.com/ffe/siteui/vlv3/9f46b569-aff7-4975-9b8e-3212e4637f16/453ba2a1-6138-4e3c-9a06-b66f9a2832e4/IN-en-20240415-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
         }
@@ -66,9 +87,13 @@ const Login = () => {
         onSubmit={(e) => e.preventDefault()}
         className="absolute p-12 my-36 bg-black w-3/12 min-w-96 mx-auto right-0 left-0 text-white rounded-lg opacity-80"
       >
+        <p className="absolute text-green-500 font-semibold top-5 left-11">
+          Educational Purpose Only
+        </p>
         <h1 className="font-bold py-3 text-3xl">{isSignIn ? "Sign In" : "Sign up"}</h1>
         {!isSignIn && (
           <input
+            ref={name}
             className="px-4 py-3 my-2 rounded-lg w-full bg-black border border-gray-400"
             type="text"
             name="name"
@@ -103,7 +128,7 @@ const Login = () => {
           className="text-xs w-full py-4 cursor-pointer"
           onClick={toggleSignIn}
         >
-          {isSignIn ? "New to Netflix? Sign up now." : "Already a user? Sign in now."}
+          {isSignIn ? "New to NetflixGPT? Sign up now." : "Already a user? Sign in now."}
         </p>
       </form>
     </div>
