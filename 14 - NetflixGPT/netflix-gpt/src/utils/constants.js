@@ -23,5 +23,3 @@ export const supported_languages = [
   { identifier: "hindi", language: "Hindi" },
   { identifier: "konkani", language: "Konkani" },
 ];
-
-export const OPENAI_KEY = "sk-proj-dY64SPMm8bBwiCedXJSCT3BlbkFJwujN4La8TRYPzNj1wWnY";
