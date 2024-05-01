@@ -11,7 +11,6 @@ const Body = () => {
   const [searchTxt, setSearchTxt] = useState("");
 
   useEffect(() => {
-    console.log("useEffect called");
     fetchData();
   }, []);
 
@@ -49,7 +48,6 @@ const Body = () => {
             const filteredSearch = restaurantListData.filter((res) => {
               return res.info.name.toLowerCase().includes(searchTxt.toLowerCase());
             });
-            121;
 
             setFilteredRestaurant(filteredSearch);
           }}
