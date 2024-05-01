@@ -23,3 +23,5 @@ export const supported_languages = [
   { identifier: "hindi", language: "Hindi" },
   { identifier: "konkani", language: "Konkani" },
 ];
+
+export const API_TOKEN = "AIzaSyCPHyysvQAjlx8zZayb0ErRf24o1s3JrYM";
