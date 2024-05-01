@@ -1,5 +1,3 @@
-﻿<span style="display: flex; justify-content: space-between; width: fit-content;">  [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/sanjit_io)  [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://www.Github.com/sanjitsg) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sanjitgawade/) </span>
-
 **OpenAi API Alternative** 
 ---
 
@@ -47,7 +45,7 @@ console.log(text);}run();
 
 
 const  handleGptSearchChick  =  async () => {
-const  searchQuery  = "Act as movie recommendation system and suggest movies for the query: "  + gptSearchTxt.current.value  +". only give me names of 5 movies, comma separated like the given result ahead. Example Result: Avatar, Sholay, Bahubali, Singham, Once upon a time in mumbai";
+const  searchQuery  = "Act as movie recommendation system and suggest movies for the query: "  + gptSearchTxt.current.value  +". only give me names of 5 movies, comma separated like the given result ahead. Example Result: Avatar, Sholay, Bahubali, Singham, MS Dhoni";
 
 const  model  =  genAI.getGenerativeModel({ model:  "gemini-pro" });
 const  result  =  await  model.generateContent(searchQuery);
@@ -57,6 +55,8 @@ const  text  =  response.text();
 console.log(text);
 };
 ```
+Note: be cautious with rate limit. its 2 requests per minutes. Don't spam the API.
+Once you click search button its takes 4-5 seconds to respond.
 ---
-
+﻿<span style="display: flex; justify-content: space-between; width: fit-content;">  [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/sanjit_io)  [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://www.Github.com/sanjitsg) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sanjitgawade/) </span>
 
