@@ -22,7 +22,7 @@ const GptSearchBar = () => {
     const json = await data.json();
     return json.results;
   };
-  const handleGptSearchChick = async () => {
+  const handleGptSearchClick = async () => {
     const searchQuery =
       "Act as movie recommendation system and suggest movies for the query: " +
       gptSearchTxt.current.value +
@@ -46,7 +46,6 @@ const GptSearchBar = () => {
     const tmdbResults = await Promise.all(promiseArray);
 
     dispatch(addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults }));
-    console.log(tmdbResults);
   };
 
   return (
@@ -66,7 +65,7 @@ const GptSearchBar = () => {
         />
         <button
           className="p-2 m-4 bg-red-600 rounded-lg text-white font-semibold col-span-2"
-          onClick={handleGptSearchChick}
+          onClick={handleGptSearchClick}
         >
           {lang[langKey].search}
         </button>

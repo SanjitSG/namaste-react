@@ -13,7 +13,6 @@ const RestaurantMenu = () => {
   }, []);
 
   const fetchData = async () => {
-    console.log(MENU_API + resId);
     const data = await fetch(MENU_API + resId);
     const json = await data.json();
 
@@ -26,7 +25,7 @@ const RestaurantMenu = () => {
     resData?.cards[2]?.card?.card?.info;
 
   const { itemCards } = resData?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
-  console.log(itemCards);
+
   return (
     <div className="restaurant-menu">
       <div className="restaurant-card">
@@ -46,7 +45,7 @@ const RestaurantMenu = () => {
       </div>
 
       <div className="res-item">
-        {itemCards.map((item, index) => (
+        {itemCards?.map((item, index) => (
           <li
             className="item-li"
             key={index}
