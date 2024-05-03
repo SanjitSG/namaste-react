@@ -8,8 +8,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUyNDFiMzczMmY1YTRjZjVkNWY1Y2NiYWUwMzVmMyIsInN1YiI6IjY2MmU3M2VhMjRmMmNlMDEyMzJhY2FlYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.P8GLL-9bWQpNhLeBBOR6xUae8TrGgBqoofzhRACrE_k",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -23,3 +22,5 @@ export const supported_languages = [
   { identifier: "hindi", language: "Hindi" },
   { identifier: "konkani", language: "Konkani" },
 ];
+
+export const API_TOKEN = process.env.REACT_APP_GEMINI_KEY;
