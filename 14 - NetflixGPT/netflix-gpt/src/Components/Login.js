@@ -83,7 +83,7 @@ const Login = () => {
       />
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-11/12 md:w-3/12  absolute p-12 my-36  bg-black  mx-auto right-0 left-0 text-white rounded-lg opacity-80"
+        className="w-11/12 md:w-4/12  absolute p-12 my-36  bg-black  mx-auto right-0 left-0 text-white rounded-lg opacity-80"
       >
         <p className="absolute text-green-500 font-semibold top-5 left-11">
           Educational Purpose Only

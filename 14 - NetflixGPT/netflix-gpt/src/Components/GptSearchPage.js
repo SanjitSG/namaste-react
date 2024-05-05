@@ -18,6 +18,16 @@ const GptSearchPage = () => {
         <GptSearchBar />
         <GptMovieSuggestions />
       </div>
+      <div className="flex justify-center items-center gap-2">
+        <h1 className="text-white">powered by</h1>
+        <img
+          className="w-24 object-cover"
+          src={
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/344px-Google_Gemini_logo.svg.png"
+          }
+          alt="google-gemini"
+        />
+      </div>
     </>
   );
 };
