@@ -83,16 +83,13 @@ const Login = () => {
       />
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-11/12 md:w-4/12  absolute p-12 my-36  bg-black  mx-auto right-0 left-0 text-white rounded-lg opacity-80"
+        className="w-11/12 md:w-[24%]  md:h-7/12 absolute p-10 my-36  bg-black  mx-auto right-0 left-0 text-white rounded-lg opacity-80 shadow-lg"
       >
-        <p className="absolute text-green-500 font-semibold top-5 left-11">
-          Educational Purpose Only
-        </p>
         <h1 className="font-bold py-3 text-3xl">{isSignIn ? "Sign In" : "Sign up"}</h1>
         {!isSignIn && (
           <input
             ref={name}
-            className="px-4 py-3 my-2 rounded-lg w-full bg-black border border-gray-400"
+            className="px-5 py-3 my-2 rounded-lg w-full bg-black border border-gray-400"
             type="text"
             name="name"
             id="name"
@@ -101,7 +98,7 @@ const Login = () => {
         )}
         <input
           ref={email}
-          className="px-4 py-3 my-2 rounded-lg w-full bg-black border border-gray-400"
+          className="px-5 py-3 my-2 rounded-lg w-full bg-black border border-gray-400"
           type="text"
           name="email"
           id="email"
@@ -109,7 +106,7 @@ const Login = () => {
         />
         <input
           ref={password}
-          className="px-4 py-3 my-2 rounded-lg w-full  bg-black border border-gray-400"
+          className="px-5 py-3 my-2 rounded-lg w-full  bg-black border border-gray-400"
           type="password"
           name="password"
           id="password"
@@ -126,8 +123,12 @@ const Login = () => {
           className="text-xs w-full py-4 cursor-pointer"
           onClick={toggleSignIn}
         >
-          {isSignIn ? "New to NetflixGPT? Sign up now." : "Already a user? Sign in now."}
+          {isSignIn ? "New to NetflixGemini? Sign up now." : "Already a user? Sign in now."}
         </p>
+        <div className="text-xs text-slate-300">
+          <p>Test user: user@test.com</p>
+          <p>Password: Test@123</p>
+        </div>
       </form>
     </div>
   );
